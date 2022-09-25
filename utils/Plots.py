@@ -29,8 +29,7 @@ if __name__ == '__main__':
     labs =  np.around([100*n_benign/sum(size),100*n_malign/sum(size)],2)
     d = Donutplot(sizes=size, colors=(color["blue"], color["red"]), circle_ratio=0.4)
     d.plot()
-    plt.legend(['Benigno', 'Maligno'], title='Tipo de nódulo', bbox_to_anchor=(0.95, 1
-                                                                               ))
+    plt.legend(['Benigno', 'Maligno'], title='Tipo de nódulo', bbox_to_anchor=(0.95, 1))
     # plt.savefig('/Users/diego/Documents/UNIOVI/TFG/LATEX/Media/proporcion.jpg', dpi = 500)
 
     plt.show()
